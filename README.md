@@ -1,7 +1,7 @@
 # build-protobuf
 编译protobuf的脚本。
 
-编译出的protoc不包含非系统的动态库依赖，并且编译出的静态库可用于生成其他动态库（-PIC）。
+编译出的protoc不包含非系统的动态库依赖，并且编译出的静态库可用于生成其他动态库（-fPIC）。
 
 # 使用方法：
 1. 下载protobuf源码：https://github.com/protocolbuffers/protobuf/releases
