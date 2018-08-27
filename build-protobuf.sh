@@ -7,7 +7,7 @@ then
 fi
 
 PROTOBUF_ROOT_BASENAME=$(basename $PROTOBUF_ROOT)
-BUILD_DIR=$(pwd)/${PROTOBUF_ROOT_BASENAME//[ -\.]/_}
+BUILD_DIR=$(pwd)/${PROTOBUF_ROOT_BASENAME//[ -\.]/_} # convert protobuf-3.6.1 to protobuf_3_6_1
 
 if [ ! "${BUILD_DIR/ /}" = "$BUILD_DIR" ]
 then
